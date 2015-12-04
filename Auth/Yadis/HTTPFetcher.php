@@ -107,7 +107,7 @@ class Auth_Yadis_HTTPFetcher {
      *
      * @access private
      */
-    public function __construct($url)
+    private function URLHasAllowedScheme($url)
     {
         return (bool)preg_match('/^https?:\/\//i', $url);
     }

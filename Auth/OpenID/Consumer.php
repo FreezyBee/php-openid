@@ -456,7 +456,7 @@ class Auth_OpenID_DiffieHellmanSHA1ConsumerSession {
     var $secret_size = 20;
     var $allowed_assoc_types = array('HMAC-SHA1');
 
-    public function __construct1ConsumerSession($dh = null)
+    public function __construct($dh = null)
     {
         if ($dh === null) {
             $dh = new Auth_OpenID_DiffieHellman();
